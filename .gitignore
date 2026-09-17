@@ -7,3 +7,7 @@ output/
 data/raw/*.csv
 .DS_Store
 .env
+
+*.duckdb
+output/
+

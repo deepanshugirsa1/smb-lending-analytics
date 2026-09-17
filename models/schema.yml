@@ -1,0 +1,18 @@
+version: 2
+models:
+  - name: stg_loan_origination
+    columns:
+      - name: loan_id
+        tests: [unique, not_null]
+      - name: status
+        tests:
+          - accepted_values:
+              values: [approved, declined, funded, repaying, defaulted, paid_off]
+  - name: mart_funding_eligibility
+    columns:
+      - name: funding_eligibility_rate_pct
+        tests: [not_null]
+  - name: mart_loss_adjusted_yield
+    columns:
+      - name: loss_adjusted_yield_pct
+        tests: [not_null]

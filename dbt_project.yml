@@ -1,0 +1,12 @@
+name: smb_lending_analytics
+version: "0.72.0"
+profile: smb_lending
+model-paths: ["models"]
+models:
+  smb_lending_analytics:
+    staging:
+      +materialized: view
+    intermediate:
+      +materialized: view
+    marts:
+      +materialized: table

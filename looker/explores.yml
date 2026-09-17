@@ -1,0 +1,6 @@
+# Looker explore stubs (Phase C). KPI CSVs in output/ are the current Looker-ready feed.
+EXPLORES = [
+    "funding_eligibility_by_cohort",
+    "loss_adjusted_yield_by_tier",
+    "offer_sizing_recommendations",
+]
